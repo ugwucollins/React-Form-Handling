@@ -1,0 +1,117 @@
+*,
+*::before,
+*::after {
+  padding: 0;
+  margin: 0 auto;
+  box-sizing: border-box;
+}
+
+.body{
+  background-color: rgba(0, 0, 0, 0.541);
+  color: white;
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.form-main {
+  width: 100%;
+  max-width: 550px;
+  background-color: rgb(255, 174, 0);
+  background-color: white;
+  background: linear-gradient(transparent,rgba(211, 211, 211, 0.832));
+  border: none;
+  border-radius: 5px;
+  padding: 10px 15px 20px 15px;
+  box-shadow: 1px 1px 8px 1px rgb(64, 63, 63);
+}
+
+.form{
+  text-align: left;
+  margin: 30px 0px 0px 10px;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+.form .Checked{
+  position: relative;
+  margin-bottom: 26px;
+}
+.form .input{
+  width: 100%;
+  max-width: 500px;
+  text-align: left;
+  height: 40px;
+  font-size: 17px;
+  border: 0px solid gray;
+  border-top: 0px;
+  border-left: 0px;
+  color: white;
+  border-top: 0px;
+  border-radius: 5px;
+  background-color: transparent;
+  outline: none;
+  box-shadow: 1px 1px 0px 0px whitesmoke;
+}
+.form .label{
+  display: block;
+  position: absolute;
+  font-size: bold;
+  font-weight: 700;
+  letter-spacing: 1px;
+  margin: -30px 0px 0px 15px;
+  transition: all 1s ease-in-out;
+  color: white;
+}
+.form .form-div-input:focus{
+  box-shadow: 1px 1px 4px 0px lightgray;
+}
+
+.Checked .input:valid ~ .label,
+.Checked .input:focus ~ .label {
+  padding: 0px 1px;
+  font-size: 15px;
+  color: #4b4848;
+  color: black;
+  transform: translateY(-28px) translateX(-14px);
+}
+
+/* btn */
+.btn{
+  position: relative;
+  cursor: pointer;
+  width: 96%;
+  display: flex;
+  justify-content: center;
+  height: 40px;
+  padding: 10px 0px;
+  border: none;
+  border-radius: 5px;
+  font-size: bold;
+  font-weight: 800;
+  margin-bottom: 10px;
+  margin-left: 0;
+}
+
+.btn:hover{
+  /* background-color: black; */
+  background-color: rgba(0, 0, 0, 0.853);
+  color: white;
+  transition: all 1s;
+}
+
+.a{
+  text-transform: capitalize;
+  font-family: 'Times New Roman', Times, serif;
+  height: 100%;
+  width: 100%;
+  color: black;
+  position: absolute;
+  top: 0;
+  padding: 10px 0px;
+  text-decoration: none;
+}
+.a:hover{
+  transition: all 1s;
+  color: white;
+}
